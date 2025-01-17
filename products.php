@@ -25,16 +25,16 @@ elseif(isset($_GET['s'])){
 }
 ?>
 <!-- Header-->
-<header class="bg-dark py-5" id="main-header">
+<header class="py-5" style="background-color: #192e5c;" id="hero">
     <div class="container px-4 px-lg-5 my-5">
-        <div class="text-center text-white">
-            <h1 class="display-4 fw-bolder"><?php echo $title ?></h1>
+        <div class="text-center text-dark">
+            <h1 class="display-4 fw-bolder text-white"><?php echo $title ?></h1>
             <p class="lead fw-normal text-white-50 mb-0"><?php echo $sub_title ?></p>
         </div>
     </div>
 </header>
 <!-- Section-->
-<section class="py-5">
+<section class="py-5" style="background-color: #F4F4F5">
     <div class="container-fluid px-4 px-lg-5 mt-5">
     <?php 
                 if(isset($_GET['search'])){
@@ -103,3 +103,25 @@ elseif(isset($_GET['s'])){
         </div>
     </div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script>
+ document.addEventListener("DOMContentLoaded", (event) => {
+
+    
+    gsap.from('#hero', {
+        duration: 0.5,
+        delay: 0.5,
+        opacity: 0,
+    });
+
+ });
+
+    gsap.from('.product-item', {
+        duration: 0.5,
+        y: 100,
+        delay: 0.5,
+        opacity: 0,
+        stagger: 0.2,
+    });
+</script>

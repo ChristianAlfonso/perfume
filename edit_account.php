@@ -7,7 +7,7 @@
                     <a href="./?p=my_account" class="btn btn btn-dark btn-flat"><div class="fa fa-angle-left"></div> Back to Order List</a>
                 </div>
                     <hr class="border-warning">
-                    <div class="col-md-6">
+                    <div class="">
                         <form action="" id="update_account">
                         <input type="hidden" name="id" value="<?php echo $_settings->userdata('id') ?>">
                             <div class="form-group">

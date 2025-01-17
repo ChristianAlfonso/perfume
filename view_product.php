@@ -20,9 +20,9 @@
  }
 ?>
 <section class="py-5">
-    <div class="container px-4 px-lg-5 my-5">
+    <div class="container px-4 px-lg-5 my-5" >
         <div class="row gx-4 gx-lg-5 align-items-center">
-            <div class="col-md-6">
+            <div class="col-md-6 border p-5 rounded-3 shadow">
                 <img class="card-img-top mb-5 mb-md-0 " loading="lazy" id="display-img" src="<?php echo validate_image($img) ?>" alt="..." />
                 <div class="mt-2 row gx-2 gx-lg-3 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-start">
                     <?php 
@@ -65,7 +65,7 @@
     </div>
 </section>
 <!-- Related items section-->
-<section class="py-5 bg-light">
+<section class="py-5" style="background-color: #dfe1ed">
     <div class="container px-4 px-lg-5 mt-5">
         <h2 class="fw-bolder mb-4">Related products</h2>
         <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">

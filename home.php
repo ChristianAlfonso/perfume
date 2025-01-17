@@ -8,8 +8,8 @@
     </div>
 </header>
 <!-- Section-->
-<section>
-    <div class="container-fluid p-4 px-lg-5 bg-light">
+<section class="py-4" id="section" style="background-color: #F4F4F5">
+    <div class="container p-4 px-lg-5 bg-white">
         <div class="row row-cols-md-3 row-cols-xl-4 justify-content-center">
             <?php 
                 $products = $conn->query("SELECT * FROM `products` where status = 1 order by rand() limit 8 ");
@@ -29,7 +29,7 @@
                     }
             ?>
             <div class="col mb-5">
-                <div class="card h-100 product-item">
+                <div class="card shadow h-100 product-item">
                     <!-- Product image-->
                     <img class="card-img-top w-100" src="<?php echo validate_image($img) ?>" alt="..." />
                     <!-- Product details-->
@@ -63,17 +63,23 @@
 
     
     gsap.from('#hero', {
-        duration: 1.5,
-        delay: 0.8,
+        duration: 0.5,
+        delay: 0.6,
         opacity: 0,
     });
 
  });
 
+    gsap.from('#section', {
+        duration: 0.5,
+        delay: 1,
+        opacity: 0,
+    });
+
     gsap.from('.product-item', {
-        duration: 1.5,
+        duration: 0.5,
         y: 100,
-        delay: 2,
+        delay: 1,
         opacity: 0,
         stagger: 0.2,
     });
