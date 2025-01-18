@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="" style="height: auto;">
  <?php require_once('inc/header.php') ?>
-<body class="hold-transition login-page dark-mode" style="background-color: white;">
+<body class="hold-transition login-page" style="background: url(../images/hero-bg.webp) no-repeat center / cover;">
   <script>
     start_loader()
   </script>

@@ -71,9 +71,10 @@ $result = $conn->query($sql);
     </style>
 </head>
 <body>
-    <h2>Staff List</h2>
+    <h2 class="text-light">Staff List</h2>
     <?php if ($result->num_rows > 0): ?>
-        <table>
+        <div class="container-fluid p-3 rounded-3 bg-white">
+        <table class="table table-bordered text-dark">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -91,6 +92,7 @@ $result = $conn->query($sql);
                 <?php endwhile; ?>
             </tbody>
         </table>
+        </div>
     <?php else: ?>
         <p class="no-records">No staff records found.</p>
     <?php endif; ?>

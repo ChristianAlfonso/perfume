@@ -115,12 +115,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </style>
 </head>
 <body>
-    <h2>Register New Staff</h2>
+    <h2 class="text-light">Register New Staff</h2>
 
-    <div class="form-container">
+    <div class="form text-dark container-fluid bg-white rounded-3 p-5">
         <!-- Display success or error message -->
         <?php if (isset($success_message)): ?>
-            <p class="message success"><?php echo $success_message; ?></p>
+            <p class="message success text-success"><?php echo $success_message; ?></p>
         <?php elseif (isset($error_message)): ?>
             <p class="message error"><?php echo $error_message; ?></p>
         <?php endif; ?>
@@ -136,7 +136,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <label for="password">Password:</label><br>
             <input type="password" id="password" name="password" required><br>
 
-            <input type="submit" value="Register Staff">
+            <input type="submit" class="btn btn-primary" value="Register Staff">
         </form>
     </div>
 </body>

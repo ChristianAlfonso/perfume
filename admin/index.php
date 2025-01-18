@@ -1,6 +1,18 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+  * {
+    font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  }
+</style>
+
+
 <?php require_once('../config.php'); ?>
 <!DOCTYPE html>
-<html lang="en" class="" style="height: auto;">
+<html lang="en" class="" style="height: auto; overflow: hidden;">
 <?php require_once('inc/header.php') ?>
   <body class="sidebar-mini layout-fixed control-sidebar-slide-open layout-navbar-fixed dark-mode sidebar-mini-md sidebar-mini-xs" data-new-gr-c-s-check-loaded="14.991.0" data-gr-ext-installed="" style="height: auto;">
     <div class="wrapper">
@@ -9,11 +21,7 @@
               
      <?php $page = isset($_GET['page']) ? $_GET['page'] : 'home';  ?>
       <!-- Content Wrapper. Contains page content -->
-      <div class="content-wrapper" style="
-          min-height: 567.854px; 
-          background-color: #ffffff !important; 
-          color: #000000;
-          ">
+      <div class="content-wrapper p-5" style="background: url(../images/admin-bg.jpg) no-repeat center / cover; color: #000000; overflow: scroll;">
      
         <!-- Main content -->
         <section class="content text-dark">

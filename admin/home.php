@@ -1,6 +1,10 @@
-<h1>Welcome to <?php echo $_settings->info('name') ?></h1>
-<hr>
-<div class="container">
+
+<div class="container-fluid d-flex justify-content-center align-items-center flex-column" style="">
+<div class="container p-3 border rounded bg-white shadow-sm">
+  <h1 class="text-center">MJCHUA PERFUME STORE</h1>
+</div>
+
+<div class="container border rounded bg-white shadow-sm mt-3">
   <?php 
     $files = array();
     $products = $conn->query("SELECT * FROM `products` order by rand() ");
@@ -33,3 +37,6 @@
       </a>
   </div>
 </div>
+
+</div>
+
